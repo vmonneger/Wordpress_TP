@@ -1,8 +1,5 @@
-<!DOCTYPE html>
-<html>
-  <head></head>
-  
-  <body>
-    <h1>Salut ca va bien ?</h1>
-  </body>
-</html>
+<?php get_header(); ?>
+
+  Salut tout le monde ! Ca va ?
+
+<?php get_footer(); ?>

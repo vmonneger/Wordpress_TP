@@ -1,5 +1,8 @@
 <?php get_header(); ?>
 
+<h1><?= get_queried_object()->name ?></h1>
+<p><?= get_queried_object()->description ?></p>
+
 <?php $logements = get_terms(['taxonomy' => 'logement']); ?>
 <ul class="nav nav-pills mb-3">
   <?php foreach($logements as $logement): ?>

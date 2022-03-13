@@ -8,7 +8,14 @@
         </div>
     <?php endif; ?>
 
-    <img src="<?php the_post_thumbnail_url() ?>" alt="">
+    <img src="<?php the_post_thumbnail_url() ?>" alt="" style="width:100%; height:auto;">
+
     <p><?php the_content(); ?></p>
+
+    <?php
+    if (comments_open() || get_comments_number()) {
+        comments_template();
+    }
+    ?>
 <?php endwhile; endif; ?>
 <?php get_footer(); ?> 

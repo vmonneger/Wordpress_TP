@@ -7,7 +7,7 @@
     <?php wp_head() ?>
   </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
     <div class="container-fluid">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -30,4 +30,4 @@
       </div>
     </div>
   </nav>
-  <div class="container">
+  <div class="container" style="margin-bottom: 100px!important;">

@@ -14,7 +14,9 @@
 <?php if ( have_posts() ) : ?>
   <div class="row">
     <?php while ( have_posts() ) : the_post(); ?>
-      <?php get_template_part('parts/post'); ?>
+      <div class="col-sm-4">
+        <?php get_template_part('parts/post'); ?>
+      </div>
     <?php endwhile; ?>
 
   </div>

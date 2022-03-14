@@ -1,8 +1,8 @@
 <?php get_header(); ?>
-  <?php while (have_posts()) : the_post(); ?>
-    <h1><?php the_title(); ?></h1>
-  <?php endwhile; ?>
-  <h1>La page principale où il y aura la search bar !</h1>
-  <a href="<?= get_post_type_archive_link('post') ?>">Voir toutes les offres !</a>
+  <h1 class="mb-5">Bienvenue sur Ald'BnB</h1>
   <?= get_search_form(); ?>
+  <div class="text-center mt-5">
+    <a href="<?= get_post_type_archive_link('post') ?>" class="btn btn-primary">Voir toutes les offres !</a>
+  </div>
+
 <?php get_footer(); ?>

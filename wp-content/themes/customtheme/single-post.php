@@ -4,7 +4,7 @@
 
     <?php if(get_post_meta(get_the_ID(), Sponso\SponsoMetaBox::META_KEY, true) === '1'): ?>
         <div class="alert alert-info">
-            C'est un article sponso
+            C'est une location sponso
         </div>
     <?php endif; ?>
 

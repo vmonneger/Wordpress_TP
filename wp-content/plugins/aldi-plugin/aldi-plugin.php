@@ -1,12 +1,25 @@
 <?php
 /** 
- * Plugin Name: Aldi Plugin
+ * Plugin Name: Aldi Manage Column
  */
 
- register_activation_hook(__FILE__, function () {
-   touch(__DIR__ . '/aldi');
- });
-
- register_deactivation_hook(__FILE__, function () {
-  unlink(__DIR__ . '/aldi');
+add_filter('manage_post_posts_columns', function ($columns) {
+  $newColumns = [];
+  foreach($columns as $key => $value) {
+    if ($key === 'date') {
+      $newColumns['sponsoring'] = 'Location sponsorisé';
+    }
+    $newColumns[$key] = $value;
+  }
+  // var_dump($newColumns);
+  return [
+    'cb' => $columns['cb'],
+    'thumbnail' => 'Miniature',
+    'title' => $columns['title'],
+    'sponsoring' => $newColumns['sponsoring'],
+    'taxonomy-logement' => $columns['taxonomy-logement'],
+    'author' => $columns['author'],
+    'comments' => $columns['comments'],
+    'date' => $columns['date']
+  ];
 });

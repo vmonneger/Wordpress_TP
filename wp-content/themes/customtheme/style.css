@@ -1,0 +1,14 @@
+/*
+Theme Name: Mon custom theme
+Theme URI: https://wordpress.org/themes/moncustomtheme/
+Author: Vince
+Description: Il est super ce theme
+Version: 1.0.0
+*/
+
+.fixed-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #121212
+}

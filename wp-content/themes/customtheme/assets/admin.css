@@ -1,0 +1,14 @@
+.manage-column.column-thumbnail {
+  width: 150px;
+}
+
+.column-sponsoring .bullet {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgb(76, 145, 76);
+}
+
+.column-sponsoring .bullet-no {
+  background: rgb(214, 89, 89);
+}
